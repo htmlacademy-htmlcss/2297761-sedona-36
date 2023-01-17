@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [ИРИНА Фридриксен](https://up.htmlacademy.ru/htmlcss/36/user/2297761).
-* Наставник: [Ярослав Баронин] (https://up.htmlacademy.ru/htmlcss/36/user/155830)
+* Наставник: [Ярослав Баронин](https://up.htmlacademy.ru/htmlcss/36/user/155830)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
