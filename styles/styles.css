@@ -119,11 +119,11 @@ body {
   background-image: url("images/advantages-image-1");
 }
 
-.advantages-item-4 {
+.advantage-item-light {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item-5 {
+.advantages-item-dark {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
