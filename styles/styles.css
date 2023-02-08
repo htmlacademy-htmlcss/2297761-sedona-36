@@ -1,15 +1,15 @@
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
-  font-size: 400;
-  src: url("fonts/ptsans-400.woff2") format ("woff2");
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format (woff2);
   font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
-  font-size: 700;
+  font-weight: 700;
   src: url("fonts/ptsans-700.woff2") format (woff2);
   font-display: swap;
 }
@@ -53,7 +53,7 @@ body {
 .hero {
   color: #000000;
   background-color: #ffffff;
-  background-image: url("images/hero-background.jpg");
+  
   background-size: 100% auto;
   background-repeat: no-repeat;
 
@@ -73,6 +73,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
 }
 
 .advantages {
@@ -99,25 +100,24 @@ body {
   font-weight: 400;
 }
 
-.advantages-item {
-  background-image: url("images/advantages-image-1");
-}
+
 
 .advantage-item-light {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item-dark {
+.advantage-item-dark {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advice-item {
+
+
+.advice-item-dark {
   background-color: rgba(131, 179, 211, 0.12);
-  text-align: center;
+
 }
 
 .advice-item {
-  background-color: #ffffff;
   text-align: center;
 }
 
@@ -175,7 +175,7 @@ body {
 }
 
 .notification {
-  background-image: url("images/subscribe.jpg");
+  
   text-align: center;
   color: #ffffff;
 
