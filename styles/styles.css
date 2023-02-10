@@ -25,6 +25,7 @@ body {
 .header {
   background-color: #ffffff;
   color: #000000;
+
 }
 
 .navigation-link {
@@ -53,7 +54,7 @@ body {
 .hero {
   color: #000000;
   background-color: #ffffff;
-  
+
   background-size: 100% auto;
   background-repeat: no-repeat;
 
@@ -82,6 +83,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+
 }
 
 .advantages-item {
@@ -91,6 +93,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  color: #ffffff;
 }
 
 .advantages-description {
@@ -104,10 +107,12 @@ body {
 
 .advantage-item-light {
   background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
 }
 
 .advantage-item-dark {
   background-color: rgba(131, 179, 211, 0.2);
+  color: #000000;
 }
 
 
@@ -175,7 +180,7 @@ body {
 }
 
 .notification {
-  
+
   text-align: center;
   color: #ffffff;
 
@@ -197,6 +202,17 @@ body {
 
 }
 
+
+input[type=text] {
+  width: 452px;
+  height: 52px;
+  border-radius: 0px 4px 4px 0px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+}
+
 .submit {
   background: #82B3D3;
   border-radius: 0px 4px 4px 0px;
@@ -210,11 +226,12 @@ body {
   left: 66.08%;
   right: 0%;
   top: calc(50% - 52px/2);
+  padding: 8px 50px;
 }
 
 
 
-footer {
+.page-footer {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -372,5 +389,3 @@ footer {
   color: #000000;
   text-decoration-line: none;
 }
-
-body {background-image: ("/../images/hero-background.jpg");}
