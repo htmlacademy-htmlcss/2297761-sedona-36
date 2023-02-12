@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -22,12 +30,31 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .header {
   background-color: #ffffff;
   color: #000000;
 
 }
-
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 577px;
+}
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
+}
 .navigation-link {
   font-family: "PT-Sans", sans-serif;
   font-size: 20px;
@@ -54,10 +81,23 @@ body {
 .hero {
   color: #000000;
   background-color: #ffffff;
-
+  background-image: url(/images/hero-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 
+
+}
+.hero-title {
+  display:block;
+  margin: 0 auto;
+  width: 458px;
+  height: 352px;
+ 
+  
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .main-description-title {
@@ -76,13 +116,18 @@ body {
   line-height: 26px;
   text-align: center;
 }
-
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
 .advantages {
   text-align: center;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  
+
 
 }
 
@@ -94,6 +139,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   color: #ffffff;
+  
 }
 
 .advantages-description {
@@ -101,9 +147,8 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  
 }
-
-
 
 .advantage-item-light {
   background-color: rgba(131, 179, 211, 0.12);
@@ -183,6 +228,10 @@ body {
 
   text-align: center;
   color: #ffffff;
+  background-image: url(/images/subscribe-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 1200px;
 
 }
 
@@ -192,6 +241,10 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
+  display:block;
+  margin: 0 auto;
+  width: 458px;
+  height: 352px;
 }
 
 .notification-description {
@@ -202,18 +255,25 @@ body {
 
 }
 
-
-input[type=text] {
+.placeholder {
   width: 452px;
   height: 52px;
-  border-radius: 0px 4px 4px 0px;
-  font-weight: 400;
+  background: #F2F2F2;
+  border-radius: 4px 0px 0px 4px;
+  
+}
+::placeholder {
   font-size: 18px;
   line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
 
 }
 
-.submit {
+.submit-description {
   background: #82B3D3;
   border-radius: 0px 4px 4px 0px;
   color: #ffffff;
@@ -223,10 +283,8 @@ input[type=text] {
   line-height: 36px;
   font-weight: 700;
   height: 52px;
-  left: 66.08%;
-  right: 0%;
-  top: calc(50% - 52px/2);
   padding: 8px 50px;
+  
 }
 
 
