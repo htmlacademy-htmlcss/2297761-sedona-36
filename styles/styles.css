@@ -471,15 +471,19 @@ body {
   width: 47px;
   height: 40px;
 }
+
 .button-vk {
   background-image: url("images/vk.svg");
 }
+
 .button-telegram {
   background-image: url("images/telegram.svg");
 }
+
 .button-you {
   background-image: url("images/youtube.svg");
 }
+
 .phone {
   font-weight: 400;
   font-size: 40px;
@@ -597,12 +601,15 @@ body {
   box-sizing: border-box;
   border: 2px solid #E5E5E5;
 }
+
 .card-grid-toggle svg {
-fill: #ffffff;
+  fill: #ffffff;
 }
+
 .card-grid-toggle-current {
   border: 2px solid #000000;
 }
+
 .card-grid-toggle-current svg {
   fill: #000000;
 }
@@ -646,9 +653,12 @@ fill: #ffffff;
   padding: 20px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
-  max-width: 300px;
   display: flex;
   flex-direction: column;
+}
+
+.hotel-card-image {
+  object-fit:contain;
 }
 
 .hotel-card-list {
@@ -670,9 +680,6 @@ fill: #ffffff;
 
 .hotel-card-link {
   text-decoration: none;
-}
-.hotel-card-image {
-  object-fit: contain;
 }
 
 .button-transporent {
