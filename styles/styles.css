@@ -89,12 +89,10 @@ body {
   width: 577px;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 0;
 }
 
 .navigation-link {
-  font-family: "PT-Sans", sans-serif;
-  line-height: 24px;
-  font-weight: 700;
   color: inherit;
   background-color: #ffffff;
   text-decoration: none;
@@ -102,6 +100,26 @@ body {
   padding: 20px 16px;
   text-align: center;
   position: relative;
+}
+
+.navigation-link-list {
+  font-family: "PT-Sans", sans-serif;
+  line-height: 24px;
+  font-weight: 700;
+  color: inherit;
+  background-color: #ffffff;
+  text-decoration: none;
+  display: block;
+  margin: 20px 16px;
+  text-align: center;
+}
+
+.navigation-link-list:hover {
+  border-bottom: 2px solid #756257;
+  flex: block;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
 .navigation-user {
@@ -151,7 +169,7 @@ body {
   padding-top: 51px;
 }
 
-.hero-kaskad {
+.hero-cascade {
   margin: 0;
   padding-top: 25px;
   display: block;
@@ -209,8 +227,35 @@ body {
   font-size: 24px;
   line-height: 28px;
   padding: 0;
+  margin: 0;
+  margin-top: 102px;
+  position: relative;
 }
 
+.advantages-title::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  bottom: -30px;
+  left: 50%;
+  margin-left: -30px;
+}
+
+.advantages-item .advantages-title::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  bottom: -30px;
+  left: 50%;
+  margin-left: -30px;
+}
+.advantages-item .advantages-description {
+  margin-top: 62px;
+}
 .advantages-description {
   font-family: 'PT Sans';
   font-style: normal;
@@ -218,6 +263,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-transform: none;
+  margin-bottom: 102px;
 }
 
 .advantages-image {
@@ -249,6 +295,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .advantage-item-dark {
@@ -472,18 +519,6 @@ body {
   height: 40px;
 }
 
-.button-vk {
-  background-image: url("images/vk.svg");
-}
-
-.button-telegram {
-  background-image: url("images/telegram.svg");
-}
-
-.button-you {
-  background-image: url("images/youtube.svg");
-}
-
 .phone {
   font-weight: 400;
   font-size: 40px;
@@ -658,7 +693,7 @@ body {
 }
 
 .hotel-card-image {
-  object-fit:contain;
+  object-fit: contain;
 }
 
 .hotel-card-list {
