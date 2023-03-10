@@ -73,7 +73,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   max-height: 64px;
-
 }
 
 .navigation-logo {
@@ -81,7 +80,11 @@ body {
   height: 70px;
   margin-right: 28px;
   margin-left: 70px;
-
+  position:relative;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: -0.07%;
 }
 
 .navigation-list {
