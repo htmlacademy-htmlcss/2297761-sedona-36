@@ -16,7 +16,6 @@
 
 html {
   height: 100%;
-
 }
 
 body {
@@ -74,12 +73,15 @@ body {
   width: 1200px;
   margin: 0 auto;
   max-height: 64px;
+
 }
 
 .navigation-logo {
   width: 140px;
+  height: 70px;
   margin-right: 28px;
   margin-left: 70px;
+
 }
 
 .navigation-list {
@@ -102,7 +104,7 @@ body {
   position: relative;
 }
 
-.navigation-link-list {
+.navigation-link-item {
   font-family: "PT-Sans", sans-serif;
   line-height: 24px;
   font-weight: 700;
@@ -114,13 +116,11 @@ body {
   text-align: center;
 }
 
-.navigation-link-list:hover {
+.navigation-link-item:hover {
   border-bottom: 2px solid #756257;
-  flex: block;
+  padding-bottom: 19px;
   order: 1;
   align-self: stretch;
-  content: "";
-
 }
 
 .navigation-user {
@@ -212,7 +212,6 @@ body {
   line-height: 36px;
   font-weight: 700;
   margin-top: 0;
-
 }
 
 .advantages-header-definition {
@@ -515,37 +514,33 @@ body {
   cursor: pointer;
 }
 
-.submit-description:hover,
-.button-button-blue:hover {
+.button-primary:hover {
   background-color: #68A2CA;
 }
 
-.submit-description:focus,
-.button-button-blue:focus {
+.button-primary:focus {
   background-color: #68A2CA;
 }
 
-.submit-description:active,
-.button-button-blue:active {
+.button-primary:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #82B3D3;
 }
 
-.submit-description:disabled,
-.button-button-blue:disabled,
-.button-button-green:disabled {
+.button-primary:disabled,
+.button-green:disabled {
   background-color: #E5E5E5;
 }
 
-.button-button-green:hover {
+.button-green:hover {
   background-color: #6C9E42;
 }
 
-.button-button-green:focus {
+.button-green:focus {
   background-color: #6C9E42;
 }
 
-.button-button-green:active {
+.button-green:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #7DB54F;
 }
@@ -582,43 +577,16 @@ body {
   height: 40px;
 }
 
-.button-vk:hover svg path {
+.footer-social-svg:hover svg path,
+.footer-social-svg:focus svg path {
   fill: #68A2CA;
 }
 
-.button-vk:focus svg path {
-  fill: #68A2CA;
-}
-
-.button-vk:active svg path {
+.footer-social-svg:active svg path {
   fill: rgba(104, 162, 202, 0.3);
 }
 
-.button-telegram:hover svg path {
-  fill: #68A2CA;
-}
-
-.button-telegram:focus svg path {
-  fill: #68A2CA;
-}
-
-.button-telegram:active svg path {
-  fill: rgba(104, 162, 202, 0.3);
-}
-
-.button-you:hover svg path {
-  fill: #68A2CA;
-}
-
-.button-you:focus svg path {
-  fill: #68A2CA;
-}
-
-.button-you:active svg path {
-  fill: rgba(104, 162, 202, 0.3);
-}
-
-.phone {
+.footer-phone-link {
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -627,22 +595,16 @@ body {
   color: #000000;
 }
 
-.phone:hover {
+.footer-phone-link:hover,
+.phofooter-phone-link:focus {
   color: #756157;
 }
 
-.phone:focus {
-  color: #756157;
-}
-
-.phone:active {
+.footer-phone-link:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.footer-logo:hover svg path {
-  fill: #756157;
-}
-
+.footer-logo:hover svg path,
 .footer-logo:focus svg path {
   fill: #756157;
 }
@@ -699,10 +661,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-link:disabled {
-  color: rgba(255, 255, 255, 0.3);
-}
-
+.breadcrumbs-link:disabled,
 .breadcrumbs-link:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -891,7 +850,7 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-button-blue {
+.button-blue {
   background: #82B3D3;
   color: #ffffff;
   font-weight: 700;
@@ -927,7 +886,7 @@ body {
   justify-content: center;
 }
 
-.button-button-green {
+.button-green {
   background: #7DB54F;
   display: inline-block;
   align-items: center;
@@ -1035,7 +994,6 @@ body {
   height: 0px;
   border: 1px solid #E6E6E6;
   transform: rotate(180deg);
-
   content: "";
   position: absolute;
   top: -40px;
@@ -1079,15 +1037,10 @@ body {
   background: #82B3D3;
 }
 
-.pagination-link:hover {
-  background-color: #68A2CA;
-  border: 1px solid #82B3D3;
-}
-
+.pagination-link:hover,
 .pagination-link:focus {
   background-color: #68A2CA;
   border: 1px solid #82B3D3;
-  outline: none;
 }
 
 .pagination-link:active {
