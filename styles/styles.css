@@ -156,7 +156,11 @@ body {
   margin-top: 14px;
   display: block;
 }
-
+.selected {
+  border-bottom: 2px solid #756257;
+  padding-bottom: 19px;
+  align-self: stretch;
+}
 .navigation-button:hover,
 .search-button-hotel:hover,
 .button-more:hover {
@@ -1043,7 +1047,7 @@ body {
 .pagination-link:hover,
 .pagination-link:focus {
   background-color: #68A2CA;
-  border: 1px solid #82B3D3;
+ 
 }
 
 .pagination-link:active {
