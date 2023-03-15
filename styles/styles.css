@@ -267,7 +267,7 @@ body {
 }
 
 .advantages-title {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -302,7 +302,7 @@ body {
 }
 
 .advantages-description {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -521,7 +521,7 @@ body {
 }
 
 .notification-input::placeholder {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -609,12 +609,12 @@ body {
   height: 40px;
 }
 
-.footer-social-svg:hover svg path,
-.footer-social-svg:focus svg path {
+.footer-social-svg:hover path,
+.footer-social-svg:focus path {
   fill: #68A2CA;
 }
 
-.footer-social-svg:active svg path {
+.footer-social-svg:active path {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -638,12 +638,12 @@ body {
   color: rgba(117, 97, 87, 0.3);
 }
 
-.footer-logo:hover svg path,
-.footer-logo:focus svg path {
+.footer-logo:hover path,
+.footer-logo:focus path {
   fill: #756157;
 }
 
-.footer-logo:active svg path {
+.footer-logo:active path {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -702,7 +702,7 @@ body {
 }
 
 .catalog-filter-title {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -717,7 +717,7 @@ body {
   width: 20px;
   height: 20px;
   margin-right: 16px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -756,7 +756,7 @@ body {
 .select-control {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1143,7 +1143,6 @@ body {
 .footer-social {
   width: 142px;
   margin-left: 70px;
-  
 }
 
 .footer-phone {
