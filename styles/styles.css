@@ -104,7 +104,7 @@ body {
   background-color: #ffffff;
   text-decoration: none;
   display: block;
-  padding: 20px 16px;
+  padding: 20px 12px;
   text-align: center;
   position: relative;
 }
@@ -134,7 +134,7 @@ body {
   margin-left: 70px;
   margin-right: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .navigation-icon-number {
@@ -155,7 +155,7 @@ body {
   text-decoration: none;
   text-align: center;
   width: 144px;
-
+  margin-left: 20px;
   border-radius: 4px;
   align-items: center;
   padding: 8px;
@@ -586,6 +586,7 @@ body {
   display: flex;
   padding-top: 45px;
   padding-bottom: 35px;
+  justify-content: space-between;
 
 }
 
@@ -1142,7 +1143,7 @@ body {
 .footer-social {
   width: 142px;
   margin-left: 70px;
-  margin-right: 42px;
+  
 }
 
 .footer-phone {
