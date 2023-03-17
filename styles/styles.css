@@ -21,7 +21,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -29,8 +28,9 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  color: black;
+  color: #000000;
   background-color: #F2F2F2;
+  min-width: 1200px;
 }
 
 .visually-hidden {
@@ -60,19 +60,20 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  background-color: #ffffff
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .page-header {
   background-color: #ffffff;
   color: #000000;
+  min-height: 64px;
 }
 
 .navigation {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  max-height: 64px;
   z-index: 2;
   position: relative;
 }
@@ -121,6 +122,7 @@ body {
   margin: 20px 16px;
   text-align: center;
   text-transform: capitalize;
+  
 }
 
 .navigation-link-item:hover {
@@ -137,12 +139,21 @@ body {
   justify-content: flex-end;
 }
 
-.navigation-icon-number {
+.quantity {
+  align-self: center;
+  background-color: #7DB54F;
+  border-radius: 50%;
   position: absolute;
-  width: 20px;
-  height: 20px;
   left: 20px;
   top: 11px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 5px 5px;
 }
 
 .navigation-button {
@@ -162,7 +173,7 @@ body {
   margin-top: 14px;
   display: block;
   text-transform: uppercase;
-
+  margin-bottom: 14px;
 }
 
 .selected {
@@ -170,7 +181,17 @@ body {
   padding-bottom: 19px;
   align-self: stretch;
 }
-
+.advantages-title::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  bottom: 0;
+  left: 50%;
+  margin-left: -30px;
+  top: 90px;
+}
 .navigation-button:hover,
 .search-button-hotel:hover,
 .button-more:hover {
@@ -199,8 +220,8 @@ body {
 
 .hero {
   color: #000000;
-  background-color: #ffffff;
-  background-image: url(/images/hero-background.jpg);
+  background-color: #000000;
+  background-image: url(../images/hero-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -240,7 +261,7 @@ body {
   text-align: center;
   margin: 0;
   margin-bottom: 21px;
-
+  color: #333333;
 }
 
 .advantages-visual {
@@ -255,7 +276,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   background-color: #82B3D3;
   color: #ffffff;
   display: flex;
@@ -267,7 +288,7 @@ body {
 }
 
 .advantages-title {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -302,7 +323,7 @@ body {
 }
 
 .advantages-description {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -334,7 +355,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
   color: #000000;
   padding: 112px 85px;
@@ -363,7 +384,7 @@ body {
 .advice-item {
   text-align: center;
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -388,6 +409,7 @@ body {
   line-height: 21px;
   font-weight: 400;
   margin: 0;
+  color: #333333;
 }
 
 .advantages-footer {
@@ -420,8 +442,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 96px;
-
-
 }
 
 .search-title {
@@ -441,6 +461,7 @@ body {
   font-weight: 400;
   text-align: center;
   margin: 0;
+  color: #333333;
 }
 
 .search-button-hotel {
@@ -463,7 +484,8 @@ body {
   align-items: center;
   text-align: center;
   color: #ffffff;
-  background-image: url(/images/subscribe-background.jpg);
+  background-color: #000000;
+  background-image: url(../images/subscribe-background.jpg);
   background-repeat: no-repeat;
   width: 1200px;
   background-size: cover;
@@ -649,7 +671,7 @@ body {
 
 
 .inner-header {
-  background-image: url(/images/catalog/catalog-background.jpg);
+  background-image: url(../images/catalog/catalog-background.jpg);
   background-repeat: no-repeat;
   width: 1060px;
   padding: 35px 70px 70px;
@@ -702,7 +724,7 @@ body {
 }
 
 .catalog-filter-title {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -756,7 +778,7 @@ body {
 .select-control {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
